@@ -35,7 +35,11 @@ print_greeting()
 # - Ensure to provide feedback for non-alphabetical or invalid entries.
 
 def check_letter():
-    # Your control flow logic goes here
+    letter = input("Enter a letter: ")
+    if letter.lower() in "aeiou":
+        print(f"The letter {letter} is a vowel.")
+    else:
+        print(f"The letter {letter} is a consonant.")
 
 # Call the function
 check_letter()
